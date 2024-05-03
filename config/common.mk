@@ -150,6 +150,7 @@ DISABLE_DEXPREOPT_CHECK := true
 # but also allow explicit overriding for testing and development.
 SYSTEM_OPTIMIZE_JAVA ?= true
 SYSTEMUI_OPTIMIZE_JAVA ?= true
+FULL_SYSTEM_OPTIMIZE_JAVA ?= true
 
 ifneq ($(TARGET_DISABLE_EPPE),true)
 # Require all requested packages to exist
