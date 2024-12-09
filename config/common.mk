@@ -85,6 +85,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 endif
 endif
 
+# Google Play services configuration
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.error.receiver.system.apps=com.google.android.gms \
+    ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent
+
 # Lineage-specific broadcast actions whitelist
 PRODUCT_COPY_FILES += \
     vendor/lineage/config/permissions/lineage-sysconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/lineage-sysconfig.xml
@@ -163,6 +168,8 @@ PRODUCT_PACKAGES += \
     LineageParts \
     LineageSetupWizard
 endif
+PRODUCT_PACKAGES += \
+    LMOFreeform
 
 PRODUCT_PACKAGES += \
     LineageSettingsProvider \
