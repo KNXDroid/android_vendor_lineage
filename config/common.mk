@@ -169,8 +169,7 @@ PRODUCT_PACKAGES += \
     LineageSetupWizard
 endif
 PRODUCT_PACKAGES += \
-    LMOFreeform	\
-    LMOFreeformSidebar
+    LMOFreeform
 
 PRODUCT_PACKAGES += \
     LineageSettingsProvider \
