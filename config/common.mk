@@ -176,7 +176,8 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/lib64/libtensorflowlite_jni.so
 
 PRODUCT_PACKAGES += \
-    LMOFreeform
+    LMOFreeform	\
+    LMOFreeformSidebar
 
 PRODUCT_PACKAGES += \
     LineageSettingsProvider \
