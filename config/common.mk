@@ -168,6 +168,13 @@ PRODUCT_PACKAGES += \
     LineageParts \
     LineageSetupWizard
 endif
+
+# TFLite service.
+PRODUCT_PACKAGES += libtensorflowlite_jni
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/lib/libtensorflowlite_jni.so \
+    system/lib64/libtensorflowlite_jni.so
+
 PRODUCT_PACKAGES += \
     LMOFreeform
 
