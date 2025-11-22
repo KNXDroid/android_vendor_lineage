@@ -69,6 +69,13 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 endif
 endif
 
+# Gapps
+WITH_GAPPS ?= true
+
+ifeq ($(WITH_GAPPS),true)
+  $(call inherit-product,  vendor/gapps/arm64/arm64-vendor.mk )
+endif
+
 # Lineage-specific broadcast actions whitelist
 PRODUCT_COPY_FILES += \
     vendor/lineage/config/permissions/lineage-sysconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/lineage-sysconfig.xml
